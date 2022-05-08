@@ -1,3 +1,25 @@
+:root {
+  --header-height: 56px;
+  --aside-height: 56px;
+  --nav-width: 224px;
+}
+
+@media screen and (max-width: 1328px) and (min-width: 807px){
+  :root {
+    --header-height: 56px;
+    --aside-height: 56px;
+    --nav-width: 56px;
+  }
+}
+
+@media screen and (max-width: 807px){
+  :root {
+    --header-height: 56px;
+    --aside-height: 0px;
+    --nav-width: 0px;
+  }
+}
+
 html,
 body {
   padding: 0;
