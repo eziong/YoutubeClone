@@ -1,0 +1,45 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: var(--header-height);
+  width: 100vw;
+  background-color: aqua;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width:fit-content;
+  margin: 0 auto;
+  padding: 0;
+  background-color: blue;
+}
+
+.content {
+  height: 100vh;
+  background-color: green;
+  float: left;
+}
+
+.main__video {
+  width: calc(100vw - var(--watch-aside-width));
+  height: calc((100vw - var(--watch-aside-width)) * 672 / 1280);
+  max-width: 1280px;
+  max-height: 672px;
+  background-color: beige;
+}
+
+.aside {
+  width: var(--watch-aside-width);
+  height: 100px;
+  background-color: rgb(134, 100, 59);
+  float: left;
+}
+
+.nav {
+  
+}
+

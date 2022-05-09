@@ -1,12 +1,23 @@
 :root {
   --header-height: 56px;
-  --aside-height: 56px;
-  --nav-width: 224px;
+
+  /* home page */
+  --home-aside-height: 56px;
+  --home-nav-width: 224px;
+
+  /* watch page */
+  --watch-title-height: 66px;
+  --watch-description-height: 144px;
+  --watch-thumbnail-height: 168px;
+  --watch-thumbnail-width: 94px;
+  --watch-aside-width: 400px;
 }
 
+/*
+  main page
+*/
 @media screen and (max-width: 1328px) and (min-width: 807px){
   :root {
-    --header-height: 56px;
     --aside-height: 56px;
     --nav-width: 56px;
   }
@@ -14,7 +25,6 @@
 
 @media screen and (max-width: 807px){
   :root {
-    --header-height: 56px;
     --aside-height: 0px;
     --nav-width: 0px;
   }

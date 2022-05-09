@@ -14,24 +14,24 @@
 .aside {
   position: absolute;
   top: var(--header-height);
-  left: var(--nav-width);
-  width: calc(100vw - var(--nav-width));
-  height: var(--aside-height);
+  left: var(--home-nav-width);
+  width: calc(100vw - var(--home-nav-width));
+  height: var(--home-aside-height);
   background-color: royalblue;
 }
 
 .nav {
   position: absolute;
   top: var(--header-height);
-  width: var(--nav-width);
+  width: var(--home-nav-width);
   height: calc(100vh - var(--header-height));
   background-color: yellowgreen;
 }
 
 .main {
   position: absolute;
-  top: calc(var(--header-height) + var(--aside-height));
-  left: var(--nav-width);
+  top: calc(var(--header-height) + var(--home-aside-height));
+  left: var(--home-nav-width);
   background-color: green;
 
 }
