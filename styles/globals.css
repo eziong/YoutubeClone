@@ -18,15 +18,15 @@
 */
 @media screen and (max-width: 1328px) and (min-width: 807px){
   :root {
-    --aside-height: 56px;
-    --nav-width: 56px;
+    --home-aside-height: 56px;
+    --home-nav-width: 72px;
   }
 }
 
 @media screen and (max-width: 807px){
   :root {
-    --aside-height: 0px;
-    --nav-width: 0px;
+    --home-aside-height: 0px;
+    --home-nav-width: 0px;
   }
 }
 
