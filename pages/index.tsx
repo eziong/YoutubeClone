@@ -30,8 +30,9 @@ import FeedbackIcon from '@mui/icons-material/FeedbackOutlined';
 
 // components
 
-import NavIcon from '../components/Modules/NavIcon';
+import NavIcon from '../components/Atoms/NavIcon';
 import HeaderMainContainer from '../components/Organisms/HeaderMainContainer'
+import Tag from '../components/Atoms/Tag';
 
 const Home: NextPage = () => {
 
@@ -99,7 +100,12 @@ const Home: NextPage = () => {
       </nav>
 
       <aside className={styles.aside}>
-3
+        <Tag text='All' first/>
+        <Tag text='JavaScript'/>
+        <Tag text='React'/>
+        <Tag text='Next.js'/>
+        <Tag text='TypeScript'/>
+        <Tag text='BlockChain' last/>
       </aside>
 
       <main className={styles.main}>

@@ -4,12 +4,13 @@
 }
 
 .aside {
-  position: absolute;
+  position: fixed;
   top: var(--header-height);
   left: var(--home-nav-width);
   width: calc(100vw - var(--home-nav-width));
   height: var(--home-aside-height);
-  background-color: royalblue;
+  background-color: white;
+  z-index: 1;
 }
 
 .nav {
