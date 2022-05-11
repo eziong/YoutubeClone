@@ -3,14 +3,6 @@
   padding: 0;
 }
 
-.header {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: var(--header-height);
-  background-color: yellow;
-}
-
 .aside {
   position: absolute;
   top: var(--header-height);
@@ -21,17 +13,84 @@
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   top: var(--header-height);
   width: var(--home-nav-width);
   height: calc(100vh - var(--header-height));
-  background-color: yellowgreen;
+  padding:  12px 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.nav::-webkit-scrollbar{
+  background-color:  transparent;
+  width: 9px
+}
+.nav:hover::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 8px;
+}
+
+.nav__group_container_first {
+  width: 240px;
+}
+.nav__group_container_second {
+  width: 240px;
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid grey;
+}
+.nav__group_container_third {
+  width: 240px;
+  padding: 8px 0px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.nav__group_container_forth {
+  width: 240px;
+  padding: 8px 0px;
+  border-bottom: 1px solid grey;
+}
+.nav__group_container_fifth {
+  width: 240px;
+  padding: 8px 0px;
+}
+.nav__group_container_sixth {
+  width: 240px;
+  padding: 16px 24px 0px 24px;
+  border-top: 1px solid grey;
+  font-size: 12px;
+  font-family: Roboto, Arial, sans-serif;
+}
+.nav__group_container_seventh {
+  width: 240px;
+  padding: 12px 24px 0px 24px;
+  font-size: 12px;
+  font-family: Roboto, Arial, sans-serif;
+}
+.nav__group_container_eighth {
+  width: 240px;
+  padding: 12px 24px 0px 24px;
+  color: grey;
+  font-size: 12px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.nav__item_text {
+  padding: 8px 24px;
+  width: 240px;
+  height: 32px;
+  font-size: 14px;
+  color: rgb(72,72,72);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: Roboto, Arial, sans-serif;
+  text-size-adjust: 100%;
 }
 
 .main {
   position: absolute;
   top: calc(var(--header-height) + var(--home-aside-height));
   left: var(--home-nav-width);
-  background-color: green;
-
+  height: 200vh;
+  background-color: blanchedalmond;
 }

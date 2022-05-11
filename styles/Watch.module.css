@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-.header {
-  height: var(--header-height);
-  width: 100vw;
-  background-color: aqua;
-}
-
 .main {
   display: flex;
   flex-direction: row;

@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import HeaderMainContainer from "../components/Organisms/HeaderMainContainer";
 import styles from "../styles/Watch.module.css";
 
 const Watch:NextPage = () => {
@@ -8,8 +9,8 @@ const Watch:NextPage = () => {
       <Head>
         <title>(?)video title</title>
       </Head>
-      <header className={styles.header}>
-
+      <header>
+        <HeaderMainContainer />
       </header>
       <main className={styles.main}>
         <div className={styles.content}>
